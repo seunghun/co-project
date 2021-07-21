@@ -6,15 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
-            .nav li a:focus {
-                outline-style: auto;
-                outline: 1px solid blue;
+            a:focus {
+                outline: 2px solid blue !important;
             }
-
-            .desktop _main_menu + div .desktop _main_menu + div + div {
+            .alarm_slide,
+            .nav .desktop + div,
+            .nav .desktop + div + div {
                 display: none;
             }
+            #doz_header .new_fixed_header {
+                display: none;
+            }
+
+            .new_fixed_header_active #doz_header .new_fixed_header {
+                display: block;
+            }
         </style>
+        <script>
+            console.log("custom js run");
+        </script>
     </head>
     <body></body>
 </html>
