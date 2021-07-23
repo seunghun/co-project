@@ -8,13 +8,7 @@ a:focus,
 .nav .desktop + div + div {
     display: none;
 }
-/* #doz_header .new_fixed_header {
-    display: none;
-} */
 
-.new_fixed_header_active #doz_header .new_fixed_header {
-    display: block !important;
-}
 .permission_error_box p {
     opacity: 1 !important;
     color: #000 !important;
@@ -65,4 +59,28 @@ a:focus,
 .li_board ul.li_body li.time a.time_txt,
 .li_board ul.li_body li.like {
     color: #333 !important;
+}
+
+.skipLink {
+    display: block;
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+    height: 1px;
+    margin-bottom: -1px;
+    white-space: nowrap;
+    text-align: center;
+    text-indent: -9999px;
+}
+.skipLink:focus,
+.skipLink:active {
+    height: 34px;
+    padding: 1px;
+    border-bottom: 2px solid #ebe8e7;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    text-indent: 0;
+    line-height: 33px;
 }

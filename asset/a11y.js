@@ -21,13 +21,6 @@ window.onload = function () {
     // 건너뛰기 버튼 추가
 
     // 타이틀 추가
-
-    console.log("href: " + $(location).attr("href"));
-    console.log("protocol: " + $(location).attr("protocol"));
-    console.log("host: " + $(location).attr("host"));
-    console.log("pathname: " + $(location).attr("pathname"));
-    console.log("search: " + $(location).attr("search"));
-
     var pathname = $(location).attr("pathname");
 
     switch (pathname) {
@@ -37,8 +30,18 @@ window.onload = function () {
         case "/login":
             $("title").text("조합원 로그인");
             break;
+
         case "/site_join":
             $("title").text("회원가입");
             break;
     }
 };
+// 건너뛰기 버튼 추가
+$("#doz_header_wrap").before("<a href='#main' class='skipLink'>본문 바로가기</a>");
+
+$(".section_first").attr("id", "main");
+$(".section_first").attr("tabindex", "0");
+
+$(".skipLink").click(function () {
+    $(".section_first").focus();
+});
