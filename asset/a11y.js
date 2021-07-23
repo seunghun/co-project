@@ -4,7 +4,7 @@ window.onload = function () {
 
     //회원가입 사진 첨부 기능 타이틀 추가
 
-    $("#drop_profile_img2 input").attr("title", "프로필사진 첨부");
+    $("#drop_profile_img2 input").attr("title", "프로필사진 업로드");
 
     // 게시글 좋아요 버튼들 텍스트 입력
 
@@ -37,8 +37,8 @@ window.onload = function () {
         case "/login":
             $("title").text("조합원 로그인");
             break;
-        case "":
-            $("title").text("신산머루 카페온");
+        case "/site_join":
+            $("title").text("회원가입");
             break;
     }
 };
