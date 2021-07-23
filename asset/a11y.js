@@ -12,10 +12,33 @@ window.onload = function () {
     $(".icon-bubble").text("댓글");
     $(".bt-heart").attr("aria-hidden", "false");
     $(".icon-bubble").attr("aria-hidden", "false");
-    $("._fade_link").remove();
 
     // 아이프레임 처리
     $("#hidden_frame").remove();
     $("#hidden_frame").attr("tabindex", "-1");
     $("#hidden_frame").attr("title", "빈프레임");
+
+    // 건너뛰기 버튼 추가
+
+    // 타이틀 추가
+
+    console.log("href: " + $(location).attr("href"));
+    console.log("protocol: " + $(location).attr("protocol"));
+    console.log("host: " + $(location).attr("host"));
+    console.log("pathname: " + $(location).attr("pathname"));
+    console.log("search: " + $(location).attr("search"));
+
+    var pathname = $(location).attr("pathname");
+
+    switch (pathname) {
+        case "/site_join_agree":
+            $("title").text("이용약관");
+            break;
+        case "/login":
+            $("title").text("조합원 로그인");
+            break;
+        case "":
+            $("title").text("신산머루 카페온");
+            break;
+    }
 };

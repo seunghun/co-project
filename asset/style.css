@@ -29,7 +29,7 @@ a:focus,
     left: 30px;
     top: 4px;
 }
-._fade_link,
+
 .checkbox-styled:not(ie8) input ~ span:before,
 .radio-styled:not(ie8) input ~ span:before {
     display: none;
