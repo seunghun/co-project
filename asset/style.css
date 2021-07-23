@@ -1,8 +1,68 @@
-.nav li a:focus {
-    outline-style: auto;
-    outline: 1px solid green;
+a:focus,
+.form-control:focus,
+.btn:focus {
+    outline: 2px solid blue !important;
+}
+.alarm_slide,
+.nav .desktop + div,
+.nav .desktop + div + div {
+    display: none;
+}
+/* #doz_header .new_fixed_header {
+    display: none;
+} */
+
+.new_fixed_header_active #doz_header .new_fixed_header {
+    display: block !important;
+}
+.permission_error_box p {
+    opacity: 1 !important;
+    color: #000 !important;
 }
 
-.desktop _main_menu + div .desktop _main_menu + div + div {
+.checkbox-styled:not(ie8) input[type="radio"],
+.radio-styled:not(ie8) input[type="radio"],
+.checkbox-styled:not(ie8) input[type="checkbox"],
+.radio-styled:not(ie8) input[type="checkbox"] {
+    opacity: 1 !important;
+    z-index: 1;
+    left: 30px;
+    top: 4px;
+}
+._fade_link,
+.checkbox-styled:not(ie8) input ~ span:before,
+.radio-styled:not(ie8) input ~ span:before {
     display: none;
+}
+*:focus {
+    outline: 1px solid blue !important;
+}
+
+.drop_profile_img input {
+    display: none;
+}
+.icon-bubble,
+.bt-heart {
+    color: transparent;
+    font-size: 0px !important;
+    /* text-indent: -999em; */
+}
+.icon-bubble::before,
+.bt-heart::before {
+    color: #000;
+    font-size: 16px;
+    text-indent: 0;
+}
+/* 게시글 하단 버튼들 */
+.comment-block .tools,
+.comment-block .btn-group-commen {
+    display: none !important;
+}
+.li_board ul.li_body li.read,
+.li_board ul.li_body li.date,
+.li_board ul.li_body li.name,
+.li_board ul.li_body li.time,
+.li_board ul.li_body li.time a.time_txt,
+.li_board ul.li_body li.like {
+    color: #333 !important;
 }
